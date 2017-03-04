@@ -1,3 +1,3 @@
 # py-dev-env
 
-A Vagrant environment for Python development.
+A Vagrant environment for Python.
