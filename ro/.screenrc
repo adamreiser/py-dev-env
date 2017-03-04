@@ -1,0 +1,22 @@
+defscrollback 5000
+defflow on
+defnonblock on
+startup_message off
+maptimeout 0
+shelltitle ""
+
+caption always "%{= kw}%-w%{= c}%n %t%{-}%+w %-= @%H"
+
+# tap ` for escape sequence
+escape ^gg
+escape ``
+
+# enables trackpad scrolling with trackpad on some systems
+termcapinfo xterm-256color|xterm-color|xterm|xterms|xs|rxvt ti@:te@
+
+screen -t alpha 0
+screen -t beta 4
+screen -t gamma 9
+
+# prevent accidental screen lock
+bind x
