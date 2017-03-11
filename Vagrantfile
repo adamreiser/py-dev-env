@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "bento/debian-8.7"
+  config.vm.box = "ideegeo/debian-sid"
   
   config.vm.synced_folder '.', '/vagrant', disabled: true
   config.vm.synced_folder "./ro", "/ro", :mount_options => ["ro"]
@@ -50,13 +50,13 @@ Vagrant.configure("2") do |config|
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
   #
-  # config.vm.provider "virtualbox" do |vb|
+   config.vm.provider "virtualbox" do |vb|
   #   # Display the VirtualBox GUI when booting the machine
   #   vb.gui = true
   #
   #   # Customize the amount of memory on the VM:
-  #   vb.memory = "1024"
-  # end
+     vb.memory = "2048"
+   end
   #
   # View the documentation for the provider you are using for more
   # information on available options.

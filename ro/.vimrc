@@ -11,6 +11,7 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'nvie/vim-flake8'
+Plugin 'craigemery/vim-autotag'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -36,10 +37,10 @@ syntax enable
 " start with folds open
 set foldlevelstart=1000
 
-" 'vim-flake8' plugin
-autocmd BufWritePost *.py call Flake8()
+" vim-flake8 (this can be annoying, so off by default)
+"autocmd BufWritePost *.py call Flake8()
 
 let mapleader = "-"
 let g:ycm_autoclose_preview_window_after_completion=1
-nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>g :split<CR> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
