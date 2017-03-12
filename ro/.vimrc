@@ -43,4 +43,5 @@ set foldlevelstart=1000
 let mapleader = "-"
 let g:ycm_autoclose_preview_window_after_completion=1
 nnoremap <leader>g :split<CR> :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>r :YcmCompleter GoToReferences<CR>
 

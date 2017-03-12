@@ -6,18 +6,21 @@ Development environment for tome2 and Python projects
 - github markdown preview with grip, lynx
     - `nnoremap <leader>p :!grip --norefresh -b %<CR>`
 
-## Notes
+## vim config
 
-### YCM vim
-Use for Python - typical usage is `:split -p`
+### YouCompleteMe
+Custom mappings, use for Python:
 
-|commad | key |
+|command | key |
 |---|---|
-| go to definition | -p |
+| split window and go to definition | -g |
+| show references to symbol | -r |
 
 ###ctags
 
-|commad | key |
+Standard mappings:
+
+|command | key |
 |---|---|
 | go to definition | ^]|
 | go back | ^t |
