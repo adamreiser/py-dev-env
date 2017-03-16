@@ -2,13 +2,14 @@
 
 Development environment for tome2 and Python projects
 
-##Ideas
+## Ideas
 - github markdown preview with grip, lynx
     - `nnoremap <leader>p :!grip --norefresh -b %<CR>`
 
-## vim config
+## Notes
 
 ### YouCompleteMe
+
 Custom mappings, use for Python:
 
 |command | key |
@@ -16,7 +17,7 @@ Custom mappings, use for Python:
 | split window and go to definition | -g |
 | show references to symbol | -r |
 
-###ctags
+### ctags
 
 Standard mappings:
 
@@ -25,7 +26,7 @@ Standard mappings:
 | go to definition | ^]|
 | go back | ^t |
 
-##Links
+## Links
 
 - http://ricostacruz.com/til/navigate-code-with-ctags
 - https://github.com/craigemery/vim-autotag
