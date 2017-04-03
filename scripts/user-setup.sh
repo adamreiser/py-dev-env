@@ -15,6 +15,10 @@ if ! grep -E '^source ~/.bash-git-prompt/gitprompt.sh$'; then
     echo 'source ~/.bash-git-prompt/gitprompt.sh' >> ~/.bashrc
 fi
 
+if ! grep -E '^source ~/.bash-git-prompt/gitprompt.sh$'; then
+    echo 'export PYTHONSTARTUP=~/.pythonrc' >> ~/.bashrc
+fi
+
 sed -i 's/^#force_color_prompt=yes$/force_color_prompt=yes/' ~/.bashrc
 
 if [ -e ~/.bash_aliases ]; then
