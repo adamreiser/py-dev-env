@@ -11,11 +11,11 @@ if ! grep -E '^GIT_PROMPT_ONLY_IN_REPO=1$' ~/.bashrc; then
     echo 'GIT_PROMPT_ONLY_IN_REPO=1' >> ~/.bashrc
 fi
 
-if ! grep -E '^source ~/.bash-git-prompt/gitprompt.sh$'; then
+if ! grep -E '^source ~/.bash-git-prompt/gitprompt.sh$' ~/.bashrc; then
     echo 'source ~/.bash-git-prompt/gitprompt.sh' >> ~/.bashrc
 fi
 
-if ! grep -E '^source ~/.bash-git-prompt/gitprompt.sh$'; then
+if ! grep -E '^export PYTHONSTARTUP=~/.pythonrc$' ~/.bashrc; then
     echo 'export PYTHONSTARTUP=~/.pythonrc' >> ~/.bashrc
 fi
 
